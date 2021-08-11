@@ -5,8 +5,8 @@ export const getDog = () => {
         dispatch(fetchStart());
         axios.get('https://api.thedogapi.com/v1/images/search')
             .then(res=>{
-                console.log("CONSOLEEEEEEEEEEEEEEEEEEEEEEEEEEE",res.data[0].breeds[0].name)
-                dispatch(fetchSuccess(res.data[0].breeds[0].name));
+                console.log("CONSOLEEEEEEEEEEEEEEEEEEEEEEEEEEE",res.data[0].url)
+                dispatch(fetchSuccess(res.data[0].url));
             })
             .catch(err => {
                 dispatch(fetchFail(err));

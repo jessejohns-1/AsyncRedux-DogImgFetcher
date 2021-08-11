@@ -1,6 +1,6 @@
 import React from 'react';
 import DOG from './components/DOG';
-
+import "./App"
 
 function App() {
   return (

@@ -26,11 +26,12 @@ const Dog = (props) => {
     <><div className="ClassyDog">
       <div>
       </div>
-      <button onClick={handleClick}>Get new dog</button>
-      <button onClick={()=> {
+      <button className="goodboy" onClick={handleClick}>Get new dog</button>
+      <button className="goodboy" onClick={()=> {
         props.fetchFail("Pressed the Error button!!!");
       }}> Error Button</button>
-      <h2>heres the dog you asked for {name}</h2>
+      <h2>heres the dog you asked for</h2>
+      <img className="rotate" src={name}/>
       </div>
     </>
   );
