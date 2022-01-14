@@ -1,35 +1,40 @@
-.App{
-    background-color: purple;
-    
+*{
+  overflow: hidden;
+  background-color: rgb(41, 42, 54);
 }
-.ClassyDog{
-    display:flex;
-    background-color: black;
-    color:red;
-    
+.App {
+  background-color: rgb(41, 42, 54);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.ClassyDog {
+  display: flex;
+  color: red; 
+  margin: auto;
+  height: 50vh;
+  width: 100vh;
+
 }
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  .rotate{
-    max-width: 500px;
-    max-height: 500px;
-    border: dashed gold 5px;
-    border-radius: 100%;
-    animation: rotation 30s infinite linear;
-
-    
-    
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rotate {
+  max-width: 500px;
+  max-height: 500px;
+  border: dashed gold 5px;
+  border-radius: 100%;
+  animation: rotation 30s infinite linear;
 }
 
-.goodboy{
-    background-color:purple;
-    max-height: 60px;
-    max-width: 100px;
-    font-size: 1rem;
+.goodboy {
+  background-color: purple;
+  max-height: 60px;
+  max-width: 100px;
+  font-size: 1rem;
 }
