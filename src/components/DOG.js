@@ -24,11 +24,27 @@ const Dog = (props) => {
 
   return (
     <>
+    
       <div className="ClassyDog">
+        
         <div></div>
-        <button className="goodboy" onClick={handleClick}>
+        {/* <button className="goodboy" onClick={handleClick}>
           Get new dog
-        </button>
+        </button> */}
+        <button class="bone" onClick={handleClick}>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="b1">
+      <div class="b2">
+        Fetch
+      </div>
+    </div>
+</button>
+        <h2>Dog image Generator</h2>
+        <img className="rotate" src={name} />
+      </div>
         <button
           className="goodboy"
           onClick={() => {
@@ -38,9 +54,6 @@ const Dog = (props) => {
           {" "}
           Error Button
         </button>
-        <h2>heres the dog you asked for</h2>
-        <img className="rotate" src={name} />
-      </div>
     </>
   );
 };
