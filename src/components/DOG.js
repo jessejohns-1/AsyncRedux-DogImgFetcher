@@ -43,7 +43,7 @@ const Dog = (props) => {
     </div>
 </button>
         <h2>Dog image Generator</h2>
-        <img className="rotate" src={name} alt="A randomly generated dog" />
+        <img className="rotate" src={name} alt="A randomly generated" />
       </div>
         <button
           className="goodboy"

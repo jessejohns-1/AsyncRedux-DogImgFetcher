@@ -24,11 +24,15 @@
   }
 }
 .rotate {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 50%;
+  max-height: 50%;
   border: dashed gold 5px;
   border-radius: 100%;
   animation: rotation 30s infinite linear;
+  height:auto !important;
+  display: block;
+  
+
 }
 
 .goodboy {
